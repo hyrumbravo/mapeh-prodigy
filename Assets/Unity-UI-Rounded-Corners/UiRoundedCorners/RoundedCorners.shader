@@ -32,7 +32,7 @@ Shader "UI/RoundedCorners/RoundedCorners" {
         }
         Cull Off
         Lighting Off
-        ZTest [unity_GUIZTestMode]
+        ZTest LEqual
         ColorMask [_ColorMask]
         // ---
         
