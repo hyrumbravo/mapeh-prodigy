@@ -18,7 +18,11 @@ public class DialogBox : MonoBehaviour
 
     public void CloseDialog(){
         background.LeanAlpha(0, 0.5f);
-        box.LeanMoveLocalY(-Screen.height, 0.5f).setEaseInExpo();
+        box.LeanMoveLocalY(-Screen.height, 0.5f).setEaseInExpo().setOnComplete(OnComplete);
 
+    }
+
+    void OnComplete(){
+        gameObject.SetActive(false);
     }
 }
