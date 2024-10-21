@@ -4,34 +4,48 @@ using System.Linq;
 
 public class SearchFilter : MonoBehaviour
 {
-    public InputField searchField;  // Reference to the InputField for search
-    public Transform content;       // Reference to the ScrollView Content (Parent of list items)
-    
-    private GameObject[] allItems;
+    public InputField searchField;  // Reference to the search bar
+    public Transform content;       // Reference to the ScrollView's Content (list of items)
+
+    private GameObject[] allItems;  // Array to store all list items
 
     void Start()
     {
-        // Store all children (list items) under the content object
+        // Store all child objects (list items) under the content
         allItems = content.Cast<Transform>().Select(t => t.gameObject).ToArray();
 
         // Add a listener to the searchField to detect changes in input
         searchField.onValueChanged.AddListener(OnSearchValueChanged);
     }
 
-    // This method gets triggered every time the input in the search field changes
     void OnSearchValueChanged(string searchText)
     {
-        foreach (var item in allItems)
-        {
-            // Check if the item's name or any relevant text matches the search input
-            bool isMatch = string.IsNullOrEmpty(searchText) || 
-                           item.name.ToLower().Contains(searchText.ToLower());
+        // Convert search text to lowercase for case-insensitive comparison
+        searchText = searchText.ToLower();
 
-            // Show the item if it matches the search query, otherwise hide it
-            item.SetActive(isMatch);
+        // Filter the matching items based on the search input
+        var matchingItems = allItems
+            .Where(item => item.name.ToLower().Contains(searchText))  // Match items containing the search text
+            .OrderBy(item => item.name.ToLower().IndexOf(searchText))  // Prioritize items with closer matches
+            .ToList();
+
+        // Rearrange the sibling index of matching items and display them
+        int siblingIndex = 0;
+
+        foreach (var item in matchingItems)
+        {
+            item.SetActive(true);  // Activate matching items
+            item.transform.SetSiblingIndex(siblingIndex);  // Move matching item to the top
+            siblingIndex++;
         }
 
-        // Force the layout to rebuild after filtering
+        // Hide non-matching items
+        foreach (var item in allItems.Except(matchingItems))
+        {
+            item.SetActive(false);  // Deactivate non-matching items
+        }
+
+        // Rebuild the layout after rearranging items
         LayoutRebuilder.ForceRebuildLayoutImmediate(content.GetComponent<RectTransform>());
     }
 }
