@@ -223,8 +223,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0025634766, y: -146.742}
-  m_SizeDelta: {x: -1.0800018, y: 293.4836}
+  m_AnchoredPosition: {x: 0.0025634766, y: -0.00012207031}
+  m_SizeDelta: {x: -1.08, y: -0.00024414}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &123526356
 GameObject:
@@ -383,7 +383,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 938.276, y: 989.9933}
+  m_SizeDelta: {x: 938.276, y: 1011.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &159256824
 MonoBehaviour:
@@ -703,7 +703,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: INTRODUCTION AND HISTORY
+  m_text: DRIBBLING
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1101,6 +1101,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1652281765}
   - {fileID: 906243300}
   - {fileID: 159256822}
   m_Father: {fileID: 1829357927}
@@ -1149,7 +1150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.25882354, g: 0.61960787, b: 0.7411765, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1208,8 +1209,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 461, y: -777.1098}
-  m_SizeDelta: {x: 850, y: 995.1442}
+  m_AnchoredPosition: {x: 461, y: -668.88}
+  m_SizeDelta: {x: 850, y: 856.25}
   m_Pivot: {x: 0.5, y: 0.2207843}
 --- !u!114 &851891972
 MonoBehaviour:
@@ -1231,15 +1232,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\tBasketball was invented in December 1891 by James Naismith, a Canadian
-    physical education instructor at the YMCA International Training School in Springfield,
-    Massachusetts. Tasked by his superior, Dr. Luther H. Gulick, to create an indoor
-    game that would keep young men active during the cold winter months, Naismith
-    set out to design a sport that emphasized skill rather than brute strength. Drawing
-    inspiration from a childhood game called \"Duck on a Rock,\" Naismith developed
-    the basic rules of basketball, which involved players throwing a ball into a
-    raised peach basket. The first game was played with nine players on each team,
-    and the sport quickly gained popularity."
+  m_text: "\tDribbling in basketball is a technique where a player repeatedly bounces
+    the ball off the floor with one hand to move around the court while maintaining
+    control. Dribbling is essential because it allows a player to move with the ball
+    without violating the rules, enabling them to navigate through defenders, create
+    plays, or advance towards the basket."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -1366,14 +1363,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.25882354, g: 0.61960787, b: 0.7411765, a: 0.6745098}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 45d2c4c911a292141b82cb266fd3f9f0, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1507,6 +1504,98 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f218926f0ea9843a5ec2e09e7263f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1307355384
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1307355387}
+  - component: {fileID: 1307355386}
+  - component: {fileID: 1307355385}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1307355385
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307355384}
+  m_Enabled: 1
+--- !u!20 &1307355386
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307355384}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1307355387
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307355384}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 195.7136}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1349208435
 GameObject:
   m_ObjectHideFlags: 0
@@ -1705,6 +1794,95 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &1652281764
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 797285847}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: da2c9721392cbe942bedaca1fa60681b,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 399.0694
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: da2c9721392cbe942bedaca1fa60681b,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 399.0694
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: da2c9721392cbe942bedaca1fa60681b,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 399.0694
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: da2c9721392cbe942bedaca1fa60681b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: da2c9721392cbe942bedaca1fa60681b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: da2c9721392cbe942bedaca1fa60681b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: da2c9721392cbe942bedaca1fa60681b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: da2c9721392cbe942bedaca1fa60681b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: da2c9721392cbe942bedaca1fa60681b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: da2c9721392cbe942bedaca1fa60681b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: da2c9721392cbe942bedaca1fa60681b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: da2c9721392cbe942bedaca1fa60681b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: da2c9721392cbe942bedaca1fa60681b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: da2c9721392cbe942bedaca1fa60681b,
+        type: 3}
+      propertyPath: m_Name
+      value: male_char_stylistic@Dribble
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: da2c9721392cbe942bedaca1fa60681b, type: 3}
+--- !u!4 &1652281765 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: da2c9721392cbe942bedaca1fa60681b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1652281764}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1829357926
 GameObject:
   m_ObjectHideFlags: 0
@@ -2061,3 +2239,4 @@ SceneRoots:
   - {fileID: 1601890471}
   - {fileID: 14128234}
   - {fileID: 932262759}
+  - {fileID: 1307355387}
