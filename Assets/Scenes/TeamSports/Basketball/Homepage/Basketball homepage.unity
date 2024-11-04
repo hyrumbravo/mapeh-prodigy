@@ -1362,10 +1362,10 @@ RectTransform:
   - {fileID: 624789396}
   m_Father: {fileID: 932262759}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.0037267802}
-  m_AnchorMax: {x: 1, y: 0.07}
-  m_AnchoredPosition: {x: 0.05029297, y: 0.7133789}
-  m_SizeDelta: {x: -0.10107422, y: 17.044006}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0.05029297, y: 79.71338}
+  m_SizeDelta: {x: -0.10107422, y: 159.044}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &964033695
 MonoBehaviour:
@@ -3322,7 +3322,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2057752736}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 932262760}
+        m_TargetAssemblyTypeName: NewBehaviourScript, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: home page
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2057752736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3454,7 +3466,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Terminologies homepage
+          m_StringArgument: skills homepage
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2103932669
