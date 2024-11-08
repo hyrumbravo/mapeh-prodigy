@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class rotateVertical : MonoBehaviour
 {
-    // Speed of rotation
-    public float rotationSpeed = 30f;
+     public float rotationSpeed = 200f; // Adjust to control rotation sensitivity
+    private Vector2 startTouchPosition;
+    private Vector2 endTouchPosition;
+    private bool isSwiping = false;
 
     void Update()
     {
@@ -13,15 +15,31 @@ public class rotateVertical : MonoBehaviour
         {
             Touch touch = Input.GetTouch(0);
 
-            if (touch.phase == TouchPhase.Moved)
+            switch (touch.phase)
             {
-                float rotationY = touch.deltaPosition.x * rotationSpeed * Time.deltaTime;
+                case TouchPhase.Began:
+                    startTouchPosition = touch.position;
+                    isSwiping = true;
+                    break;
 
-                // Get the current rotation
-                Vector3 currentRotation = transform.eulerAngles;
+                case TouchPhase.Moved:
+                    if (isSwiping)
+                    {
+                        endTouchPosition = touch.position;
+                        float swipeDistanceY = endTouchPosition.y - startTouchPosition.y;
+                        float rotationAmount = swipeDistanceY * rotationSpeed * Time.deltaTime;
+                        
+                        // Rotate the object vertically around the X-axis
+                        transform.Rotate(rotationAmount, 0, 0);
 
-                // Adjust only the Y-axis rotation to keep it horizontal
-                transform.eulerAngles = new Vector3(currentRotation.x, currentRotation.y - rotationY, currentRotation.z);
+                        // Update start position for smoother rotation
+                        startTouchPosition = endTouchPosition;
+                    }
+                    break;
+
+                case TouchPhase.Ended:
+                    isSwiping = false;
+                    break;
             }
         }
     }
