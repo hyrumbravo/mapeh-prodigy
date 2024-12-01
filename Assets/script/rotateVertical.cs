@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class rotateVertical : MonoBehaviour
 {
-     public float rotationSpeed = 200f; // Adjust to control rotation sensitivity
+    public float rotationSpeed = 200f; // Adjust to control rotation sensitivity
     private Vector2 startTouchPosition;
     private Vector2 endTouchPosition;
     private bool isSwiping = false;
 
     void Update()
     {
+        // Handle touch input
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0);
@@ -28,7 +29,7 @@ public class rotateVertical : MonoBehaviour
                         endTouchPosition = touch.position;
                         float swipeDistanceY = endTouchPosition.y - startTouchPosition.y;
                         float rotationAmount = swipeDistanceY * rotationSpeed * Time.deltaTime;
-                        
+
                         // Rotate the object vertically around the X-axis
                         transform.Rotate(rotationAmount, 0, 0);
 
@@ -41,6 +42,16 @@ public class rotateVertical : MonoBehaviour
                     isSwiping = false;
                     break;
             }
+        }
+
+        // Handle mouse input
+        if (Input.GetMouseButton(0)) // Left mouse button is held
+        {
+            // Get the vertical movement of the mouse
+            float mouseDeltaY = Input.GetAxis("Mouse Y") * rotationSpeed * Time.deltaTime;
+
+            // Rotate the object vertically around the X-axis
+            transform.Rotate(mouseDeltaY, 0, 0);
         }
     }
 }

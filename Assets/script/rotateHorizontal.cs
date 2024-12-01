@@ -9,7 +9,7 @@ public class rotateHorizontal : MonoBehaviour
 
     void Update()
     {
-        // Check if there's at least one touch on the screen
+        // Handle touch input
         if (Input.touchCount > 0)
         {
             Touch touch = Input.GetTouch(0); // Get the first touch
@@ -17,12 +17,21 @@ public class rotateHorizontal : MonoBehaviour
             // If the touch is moving, calculate the rotation based on the horizontal movement
             if (touch.phase == TouchPhase.Moved)
             {
-                // Rotate the object based on the horizontal delta movement
                 float rotationX = touch.deltaPosition.x * rotationSpeed * Time.deltaTime;
-                
+
                 // Rotate around the Y-axis (horizontal rotation)
                 transform.Rotate(0, -rotationX, 0);
             }
+        }
+
+        // Handle mouse input
+        if (Input.GetMouseButton(0)) // Left mouse button is held
+        {
+            // Get the horizontal movement of the mouse
+            float mouseDeltaX = Input.GetAxis("Mouse X") * rotationSpeed * Time.deltaTime;
+
+            // Rotate around the Y-axis (horizontal rotation)
+            transform.Rotate(0, -mouseDeltaX, 0);
         }
     }
 }
