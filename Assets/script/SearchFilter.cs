@@ -1,13 +1,14 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro; // Import TextMeshPro namespace
 using System.Linq;
 
 public class SearchFilter : MonoBehaviour
 {
-    public InputField searchField;  // Reference to the search bar
-    public Transform content;       // Reference to the ScrollView's Content (list of items)
+    public TMP_InputField searchField;  // Reference to the TextMeshPro search bar
+    public Transform content;          // Reference to the ScrollView's Content (list of items)
 
-    private GameObject[] allItems;  // Array to store all list items
+    private GameObject[] allItems;     // Array to store all list items
 
     void Start()
     {
