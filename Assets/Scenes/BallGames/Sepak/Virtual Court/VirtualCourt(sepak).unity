@@ -692,7 +692,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: b5f2a8988b49766419af9c7ad836575c,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.07651467
+      value: -0.4187916
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: b5f2a8988b49766419af9c7ad836575c,
         type: 3}
@@ -702,7 +702,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: b5f2a8988b49766419af9c7ad836575c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.99706846
+      value: -0.90808237
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: b5f2a8988b49766419af9c7ad836575c,
         type: 3}
@@ -717,7 +717,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: b5f2a8988b49766419af9c7ad836575c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -908.777
+      value: -949.51697
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: b5f2a8988b49766419af9c7ad836575c,
         type: 3}
@@ -751,11 +751,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: b5f2a8988b49766419af9c7ad836575c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 485450787}
+      addedObject: {fileID: 485450788}
     - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: b5f2a8988b49766419af9c7ad836575c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 485450788}
+      addedObject: {fileID: 485450791}
   m_SourcePrefab: {fileID: 100100000, guid: b5f2a8988b49766419af9c7ad836575c, type: 3}
 --- !u!1 &485450786 stripped
 GameObject:
@@ -763,18 +763,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 485450785}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &485450787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 485450786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d19c20abd1f59141b472d73f987aa0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &485450788
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -795,7 +783,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: cf9d4ac48f80e9f4fa16303853f697b0, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   m_StaticBatchInfo:
@@ -819,6 +807,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &485450791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485450786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad5ac9fecf860c64a887b8116b4cae2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 10
 --- !u!1 &535531220
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,7 +906,7 @@ Transform:
   m_GameObject: {fileID: 535531220}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 800, y: 0.005174637, z: -22.67686}
+  m_LocalPosition: {x: 799.3, y: 0.005174637, z: -22.67686}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1306,7 +1307,6 @@ GameObject:
   - component: {fileID: 1105770713}
   - component: {fileID: 1105770715}
   - component: {fileID: 1105770714}
-  - component: {fileID: 1105770716}
   m_Layer: 5
   m_Name: RawImage
   m_TagString: Untagged
@@ -1368,18 +1368,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1105770712}
   m_CullTransparentMesh: 1
---- !u!114 &1105770716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1105770712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d19c20abd1f59141b472d73f987aa0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1131728893
 GameObject:
   m_ObjectHideFlags: 0

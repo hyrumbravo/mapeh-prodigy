@@ -15,17 +15,15 @@ public class SceneRedirector : MonoBehaviour
     {
         //ballgames,racketgames,boardgames
         { "ball games", "Ballgames" },
+        { "racket games", "Racketgames" },
+        { "board game", "boardgame homepage" },
 
         //basketball
-        { "basketball", "Basketball homepage" },
-
-        //basketball intro
-        { "basketball introduction", "bball intro" },
-        { "basketball history", "bball intro" },
+        { "basketball", "bball intro" },
 
         //basketball faci/equip
         { "basketball court", "faci(court)bball" },
-        { "basketball ball", "faci(3dball)bball" },
+        { "basketball(ball)", "faci(3dball)bball" },
         { "basketball ring and board", "faci(ringboard)bball" },
 
         //basketball defensive rule
@@ -51,32 +49,186 @@ public class SceneRedirector : MonoBehaviour
         { "out of bounds", "rule7 nonfoul bball" },
 
         //basketball skills
-        { "dribbling (basketball)", "dribbling bball" },
-        { "passing (basketball)", "passing bball" },
-        { "rebounding (basketball)", "rebound bball" },
-        { "shooting (basketball)", "shooting bball" },
+        { "dribbling(basketball)", "dribbling bball" },
+        { "passing(basketball)", "passing bball" },
+        { "rebounding(basketball)", "rebound bball" },
+        { "shooting(basketball)", "shooting bball" },
 
-        //basketball skills
-        { "basketball glossary and terms", "bball glossary and terms" },
+        //basketball glossary
+        { "basketball glossary of terms", "bball glossary and terms" },
 
         //basketball skills
         { "virtual court(basketball)", "VirtualCourt(bball)" },
-        
-        
+
+
+
+        //sepak intro
+        { "sepak takraw", "sepak intro" },
+
+        //sepak faci/equip
+        { "takraw ball", "faci(3dball)sepak" },
+        { "rattan ball", "faci(3dball)sepak" },
+        { "sepak court", "faci(court)sepak" },
+        { "net(sepak)", "faci(net)sepak" },
+
+
+
+        //sepak glossary
+        { "sepak glossary of terms", "sepak glossary and terms" },
+
+
+        //sepak rules
+        { "sepak violations", "sepak ruleviolation" },
+        { "sepak defensive rule", "sepak defensive rules" },
+        { "sepak offensive rule", "sepak offensiverules" },
+
+
+        //sepak skills
+        { "serving(sepak)", "serving sepak skill" },
+        { "passing(sepak)", "passing sepak skill" },
+        { "spiking(sepak)", "spiking sepak skill" },
+        { "blocking(sepak)", "blocking sepak skill" },
+        { "ball control(sepak)", "ballcontrol sepak skill" },
+
+        //sepak virtual
+        { "virtual court(sepak)", "serving sepak skill" },
+
+
+        //soccer intro
+        { "soccer", "soccer intro" },
+
+        //soccer facilities
+        { "soccer ball", "faci(3dball)soccer" },
+        { "soccer field", "faci(field)soccer" },
+        { "soccer goal", "faci(goal)soccer" },
+
+         //soccer glossary
+        { "soccer glossary of terms", "soccer intro" },
+
+
+        //soccer rule violation
+        { "soccer violations", "soccer rulesViolation" },
+
+        //soccer rule violation
+        { "soccer offensive rules", "soccer offensiverules" },
+        { "soccer defensive rules", "soccer defensiverules" },
+
+
+        //soccer skills
+        { "dribbling(soccer)", "dribbling soccer" },
+        { "goalkeeping(soccer)", "goalkeep soccer" },
+        { "heading(soccer)", "heading soccer" },
+        { "juggling(soccer)", "juggling soccer" },
+        { "passing(soccer)", "passing soccer" },
+        { "shooting(soccer)", "shooting soccer" },
+
+        //soccer virtual 
+        { "virtual court(soccer)", "VirtualCourt(soccer)" },
+
+
+
+        //vball
+        { "volleyball", "vball intro" },
+
+        //vball facilities
+        { "volleyball(ball)", "ball faci vball" },
+        { "volleyball court", "court faci vball" },
+        { "volleyball net and pole", "court NetPole vball" },
+
+
+        //vball skill
+        { "blocking(volleyball)", "blocking vball" },
+        { "digging(volleyball)", "digging vball" },
+        { "passing(volleyball)", "passing vball" },
+        { "serving(volleyball)", "serve vball" },
+        { "setting(volleyball)", "setting vball" },
+        { "spiking(volleyball)", "spiking vball" },
+
+        //vball violation
+        { "volleyball violations", "vball ruleviolations" },
+        { "volleyball offensive rules", "vball offensiverules" },
+        { "volleyball defensive rules", "vball defensiverules" },
+
+        //vball glossary
+        { "volleyball glossary of terms", "vball glossary and terms" },
+
+        //vball glossary
+        { "virtual court(volleyball)", "VirtualCourt(volleyball)" },
+
+
+
+        //chess
+        { "chess", "chess intro" },
+
+        //chess pieces and board
+        { "bishop", "bishop" },
+        { "chess board", "chessboard" },
+        { "king", "king" },
+        { "knight", "knight" },
+        { "pawn", "pawn" },
+        { "queen", "queen" },
+        { "rook", "rook" },
+
+
+        //chess movement
+        { "chess pieces movement rules", "homepage skill chess" },
+
+        //chess rules
+        { "chess rules", "homepage chess rules" },
+        { "castling", "castling" },
+        { "checkmate", "check and checkmate" },
+
+        //chess glossary of terms
+        { "chess glossary of terms", "glossary chess" },
+
+        //chess virtual
+        { "virtual board(chess)", "VirtualCourt(chess)" },
+
+
+        //badminton 
+        { "badminton", "badminton intro" },
+
+        //badminton faci
+        { "badminton court", "court badminton 1" },
+        { "badminton racket", "racket badminton" },
+        { "shuttlecock", "Shuttle badminton" },
+
+        //badminton rules
+        { "badminton violations", "RuleViolation homepage badminton" },
+        { "badminton offensive rules", "badminton offensive homepage" },
+        { "badminton defensive rules", "badminton defensive homepage" },
+
+        //badminton glossary
+        { "badminton glossary of terms", "Terminologies Badminton" },
+
+        //badminton virtual
+        { "virtual court(badminton)", "VirtualCourt(badminton)" },
+
+        //tabletennis intro
+        { "table tennis", "tabletennis intro" },
+
+        //tabletennis faci
+        { "table tennis ball", "faci(3dball)tabletennis" },
+        { "table tennis racket", "faci(racket)racket" },
+        { "table tennis table", "faci(table)tabletennis" },
+
+        //tabletennis rule
+        { "table tennis game rule", "tabletennis gamerule homepage" },
+        { "table tennis violations", "tabletennis violation homepage" },
+
+        //tabletennis glossary
+        { "table tennis glossary of terms", "tabletennis glossary and terms" },
+
+        //tabletennis glossary
+        { "virtual court(table tennis)", "VirtualCourt(tabletennis)" }
+
+
 
         
+        
 
 
-
-
-
-
-
-
-
-
-
-
+        
 
 
 
