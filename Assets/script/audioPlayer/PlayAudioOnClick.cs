@@ -67,12 +67,12 @@ public class PlayAudioOnClick : MonoBehaviour
             if (buttonImage != null)
                 buttonImage.sprite = pauseImage;
 
-            // Lower background music volume to 20% or pause it if muted
+            // Lower background music volume to 1% or pause it if muted
             if (BackgroundMusic.Instance != null)
             {
                 if (BackgroundMusic.Instance.IsPlaying() && !BackgroundMusic.Instance.IsMuted())
                 {
-                    BackgroundMusic.Instance.SetVolume(0.2f); // Lower volume to 20%
+                    BackgroundMusic.Instance.SetVolume(0.01f); // Lower volume to 1%
                 }
             }
         }
