@@ -33,10 +33,10 @@ public class SceneRedirector : MonoBehaviour
         { "offensive rule", "bball offensiverules" },
 
         //basketball foul
-        { "personal Foul", "rule1 foul bball" },
-        { "technical Foul", "rule2 foul bball" },
-        { "flagrant Foul", "rule3 foul bball" },
-        { "looseball foul", "rule1 foul bball" },
+        { "personal foul", "rule1 foul bball" },
+        { "technical foul", "rule2 foul bball" },
+        { "flagrant foul", "rule3 foul bball" },
+        { "looseball foul", "rule4 foul bball" },
 
         //basketball non foul
         { "travelling", "rule1 nonfoul bball" },
@@ -152,7 +152,7 @@ public class SceneRedirector : MonoBehaviour
         //vball glossary
         { "volleyball glossary of terms", "vball glossary and terms" },
 
-        //vball glossary
+        //vball virtual court
         { "virtual court(volleyball)", "VirtualCourt(volleyball)" },
 
 
@@ -204,6 +204,16 @@ public class SceneRedirector : MonoBehaviour
         //badminton virtual
         { "virtual court(badminton)", "VirtualCourt(badminton)" },
 
+        //badminton skills
+        { "clear(badminton)", "clear badminton" },
+        { "drive(badminton)", "drive badminton" },
+        { "dropshot(badminton)", "dropshot badminton" },
+        { "high serve(badminton)", "highserve badminton" },
+        { "low serve(badminton)", "lowserve badminton" },
+        { "smash(badminton)", "smash badminton" },
+
+
+
         //tabletennis intro
         { "table tennis", "tabletennis intro" },
 
@@ -219,8 +229,13 @@ public class SceneRedirector : MonoBehaviour
         //tabletennis glossary
         { "table tennis glossary of terms", "tabletennis glossary and terms" },
 
-        //tabletennis glossary
-        { "virtual court(table tennis)", "VirtualCourt(tabletennis)" }
+        //tabletennis virtual court
+        { "virtual court(table tennis)", "VirtualCourt(tabletennis)" },
+
+    
+    
+
+
 
 
 
