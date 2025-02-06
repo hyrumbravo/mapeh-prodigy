@@ -113,11 +113,15 @@ public class SceneRedirector : MonoBehaviour
         { "soccer offensive rules", "soccer offensiverules" },
         { "soccer defensive rules", "soccer defensiverules" },
 
+        { "hand ball", "rule1 rule violation soccer" },
+        { "foul play", "rule2 rule violation soccer" },
+        { "dangerous play", "rule3 rule violation soccer" },
+        { "obstruction", "rule4 rule violation soccer" },
+        { "back pass", "rule5 rule violation soccer" },
+
 
         //soccer skills
         { "dribbling(soccer)", "dribbling soccer" },
-        { "goalkeeping(soccer)", "goalkeep soccer" },
-        { "heading(soccer)", "heading soccer" },
         { "juggling(soccer)", "juggling soccer" },
         { "passing(soccer)", "passing soccer" },
         { "shooting(soccer)", "shooting soccer" },
