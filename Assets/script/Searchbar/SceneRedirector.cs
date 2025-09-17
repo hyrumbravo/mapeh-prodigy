@@ -236,6 +236,23 @@ public class SceneRedirector : MonoBehaviour
         //tabletennis virtual court
         { "virtual court(table tennis)", "VirtualCourt(tabletennis)" },
 
+        //pickleball intro
+        { "pickleball", "Pickleball homepage" },
+
+        //pickleball faci
+        { "pickleball (ball)", "faci(3dball)pickleball" },
+        { "pickleball paddle", "faci(paddle)pickleball" },
+        { "pickleball court", "faci(court)pickleball" },
+
+        //pickleball rule
+        { "pickleball rule violation", "pickle ball violation homepage" },
+
+
+        //pickleball glossary
+        { "pickleball glossary of terms", "pickleball glossary and terms" },
+    
+
+
     
     
 
