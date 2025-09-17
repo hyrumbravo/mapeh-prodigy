@@ -57,8 +57,7 @@ public class SceneRedirector : MonoBehaviour
         //basketball glossary
         { "basketball glossary of terms", "bball glossary and terms" },
 
-        //basketball skills
-        { "virtual court(basketball)", "VirtualCourt(bball)" },
+ 
 
 
 
@@ -90,8 +89,6 @@ public class SceneRedirector : MonoBehaviour
         { "blocking(sepak)", "blocking sepak skill" },
         { "ball control(sepak)", "ballcontrol sepak skill" },
 
-        //sepak virtual
-        { "virtual court(sepak)", "serving sepak skill" },
 
 
         //soccer intro
@@ -126,9 +123,6 @@ public class SceneRedirector : MonoBehaviour
         { "passing(soccer)", "passing soccer" },
         { "shooting(soccer)", "shooting soccer" },
 
-        //soccer virtual 
-        { "virtual court(soccer)", "VirtualCourt(soccer)" },
-
 
 
         //vball
@@ -156,8 +150,7 @@ public class SceneRedirector : MonoBehaviour
         //vball glossary
         { "volleyball glossary of terms", "vball glossary and terms" },
 
-        //vball virtual court
-        { "virtual court(volleyball)", "VirtualCourt(volleyball)" },
+
 
 
 
@@ -185,8 +178,7 @@ public class SceneRedirector : MonoBehaviour
         //chess glossary of terms
         { "chess glossary of terms", "glossary chess" },
 
-        //chess virtual
-        { "virtual board(chess)", "VirtualCourt(chess)" },
+
 
 
         //badminton 
@@ -205,8 +197,7 @@ public class SceneRedirector : MonoBehaviour
         //badminton glossary
         { "badminton glossary of terms", "Terminologies Badminton" },
 
-        //badminton virtual
-        { "virtual court(badminton)", "VirtualCourt(badminton)" },
+
 
         //badminton skills
         { "clear(badminton)", "clear badminton" },
@@ -233,8 +224,7 @@ public class SceneRedirector : MonoBehaviour
         //tabletennis glossary
         { "table tennis glossary of terms", "tabletennis glossary and terms" },
 
-        //tabletennis virtual court
-        { "virtual court(table tennis)", "VirtualCourt(tabletennis)" },
+
 
         //pickleball intro
         { "pickleball", "Pickleball homepage" },
